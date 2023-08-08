@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ButtonRedComponent {
 
+  class_Text:string = '';
+  disabled_btn:boolean=false;
+
 }

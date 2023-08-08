@@ -1,8 +1,30 @@
-<div>
-    <button >Color Rojo</button>
-    <button >Color Azul</button>
-    <button>Color Verde</button>
-</div>
-<div>
-    <h1>Ejemplo de texto</h1>
+
+
+<div class="container">
+    <div class="row text-center mb-md-3">
+        <div class="col-md-12">
+            <h2>4-Prueba classes dinamicas</h2>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-3 offset-md-2">
+            <button class="btn btn-danger" [class.disabled]="disabled_btn" style="width:100%;" (click)="class_Text='text-danger'">Color Rojo</button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary" [class.disabled]="disabled_btn" style="width:100%;" (click)="class_Text='text-primary'">Color Azul</button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success" [class.disabled]="disabled_btn" style="width:100%;"  (click)="class_Text='text-success'">Color Verde</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 mt-md-5">
+           <h3 [class]="class_Text"><strong>Este texto tiene clases dinamicas</strong></h3>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-3 offset-md-5">
+            <button class="btn btn-secondary" style="width:100%;" (click)="disabled_btn=!disabled_btn">Activar/Desactivar</button>
+        </div>
+    </div>
 </div>

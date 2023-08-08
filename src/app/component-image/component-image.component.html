@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row text-center mb-md-3">
+        <div class="col-md-12">
+            <h2>5-Enlace de propiedades</h2>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-3">
+            <button class="btn btn-primary" style="width:100%;" (click)="src='https://cdn.vuetifyjs.com/images/parallax/material.jpg'">Imagen 1</button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success" style="width:100%;" (click)="src='https://picsum.photos/500/300?image=232'">Imagen 2</button>
+        </div>
+    </div>
+    <div class="row text-center mt-md-4">
+        <div class="col-md-3 offset-md-5">
+          <img [src]="src" alt="hola"  width="80%" height="80%">
+        </div>
+    </div>
+</div>

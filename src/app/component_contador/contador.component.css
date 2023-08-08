@@ -1,0 +1,10 @@
+h5{
+    color:green;
+}
+
+.area{
+    background-color: rgb(196, 241, 255);
+    height: 5em;
+    border-radius: 2%;
+    border: 1px solid green;
+}

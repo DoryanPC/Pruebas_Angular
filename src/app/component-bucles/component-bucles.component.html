@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row text-center mb-md-3">
+        <div class="col-md-12">
+            <h2>6-Bucles</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 offset-md-4">
+         <ul>
+            <li *ngFor="let persona of personas;let i = index">
+               Id: {{ i }} - Titulo: {{persona.titulo}} - Exp: {{persona.anios_exp}} - Sexo: {{persona.sexo}}  - Genero:
+               <div [ngSwitch]="persona.sexo">
+                    <span *ngSwitchCase="'M'"><strong>Hombre</strong></span>
+                    <span *ngSwitchCase="'F'"><strong>Mujer</strong></span>
+                    <span *ngSwitchDefault><strong>Otro</strong></span>
+               </div>
+             </li>
+         </ul>
+        </div>
+    </div>
+</div>

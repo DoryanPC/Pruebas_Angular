@@ -7,6 +7,10 @@ import { ContadorAutomaticoComponent } from './contador-automatico/contador-auto
 import { ButtonRedComponent } from './button-red/button-red.component';
 import { ComponentImageComponent } from './component-image/component-image.component';
 import { ComponentFormularioComponent } from './component-formulario/component-formulario.component';
+import { ComponentBuclesComponent } from './component-bucles/component-bucles.component';
+import { ComponentFormularioPlantillaComponent } from './component-formulario-plantilla/component-formulario-plantilla.component';
+
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -15,10 +19,13 @@ import { ComponentFormularioComponent } from './component-formulario/component-f
     ContadorAutomaticoComponent,
     ButtonRedComponent,
     ComponentImageComponent,
-    ComponentFormularioComponent
+    ComponentFormularioComponent,
+    ComponentBuclesComponent,
+    ComponentFormularioPlantillaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

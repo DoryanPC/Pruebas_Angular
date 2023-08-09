@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./component-formulario.component.css']
 })
 export class ComponentFormularioComponent {
+  
+  usuario_saludado:Boolean=false;
 
   mostrar_en_consola(nombre:string){
     alert("Bienvenido:"+nombre);
+    this.usuario_saludado=true;
   }
 
 }

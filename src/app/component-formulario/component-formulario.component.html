@@ -11,5 +11,20 @@
         <div class="col-md-3">
             <button class="btn btn-success" style="width:100%;" (click)="mostrar_en_consola(name.value)">Saludar</button>
         </div>
+        <div class="col-md-3">
+            <div class="aler alert-primary" *ngIf="usuario_saludado; else mensaje">
+                Usted ha sido salvajemente saludado xd!
+                <button class="btn btn-danger" (click)="usuario_saludado=false">
+                    x
+                </button>
+            </div>
+
+        <ng-template #mensaje>
+            <div class="aler alert-warning">
+              Usuario sin saludar :(
+            </div>
+        </ng-template>
+          
+        </div>
     </div>
 </div>
